@@ -19,7 +19,7 @@ export default function ResumeForm({ data, onChange }: ResumeFormProps) {
     onChange({
       ...data,
       [section]: {
-        // @ts-ignore
+        // @ts-expect-error field is a string
         ...data[section],
         [field]: value
       }
