@@ -10,7 +10,7 @@ import { ResumeData, Style } from './types'
 import StyleOptions from '@/components/StyleOption'
 
 export default function ResumePage() {
-  const [file, setFile] = useState<File | null>(null)
+  // const [file, setFile] = useState<File | null>(null)
   const [resumeData, setResumeData] = useState<ResumeData>({
     fullName: '',
     education: {
