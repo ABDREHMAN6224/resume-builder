@@ -15,7 +15,8 @@ export default function StyleOptions({ style, onChange }: StyleOptionsProps) {
     'Times New Roman',
     'Helvetica',
     'Calibri',
-    'Georgia'
+    'Georgia',
+    'Roboto',
   ]
 
   return (
