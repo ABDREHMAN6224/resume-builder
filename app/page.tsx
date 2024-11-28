@@ -36,27 +36,27 @@ export default function ResumePage() {
     projects: []
   })
 
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const files = event.target.files
-    if (files && files.length > 0) {
-      setFile(files[0])
-    }
-  }
+  // const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   const files = event.target.files
+  //   if (files && files.length > 0) {
+  //     setFile(files[0])
+  //   }
+  // }
 
-  const handleDownloadJSON = () => {
-    if (file) {
-      const reader = new FileReader()
-      reader.onload = (event) => {
-        const data = event.target?.result
-        if (typeof data === 'string') {
-          const json = JSON.parse(data)
-          setResumeData(json.resumeData)
-          setStyle(json.style)
-        }
-      }
-      reader.readAsText(file)
-    }
-  }
+  // const handleDownloadJSON = () => {
+  //   if (file) {
+  //     const reader = new FileReader()
+  //     reader.onload = (event) => {
+  //       const data = event.target?.result
+  //       if (typeof data === 'string') {
+  //         const json = JSON.parse(data)
+  //         setResumeData(json.resumeData)
+  //         setStyle(json.style)
+  //       }
+  //     }
+  //     reader.readAsText(file)
+  //   }
+  // }
 
   const [style, setStyle] = useState<Style>({
     fontFamily: 'Arial',
